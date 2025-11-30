@@ -1,16 +1,16 @@
 [
   {
-    "title": "LinkedIn Opt-Out",
-    "url": "https://www.linkedin.com/mypreferences/d/settings/data-for-ai-improvement",
-    "description": "Manage your LinkedIn data and AI preferences."
-  },
-  {
-    "title": "ChatGPT Opt-Out",
+    "title": "ChatGPT",
     "url": "https://chatgpt.com/#settings/DataControls",
     "description": "Opt out of OpenAI's data usage policies."
   },
   {
-    "title": "X.com Opt-Out",
+    "title": "LinkedIn",
+    "url": "https://www.linkedin.com/mypreferences/d/settings/data-for-ai-improvement",
+    "description": "Manage your LinkedIn data and AI preferences."
+  },
+  {
+    "title": "X.com (formerly Twitter)",
     "url": "https://x.com/settings/grok_settings",
     "description": "Control your data usage on X.com."
   }

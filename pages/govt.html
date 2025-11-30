@@ -1,44 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Government Links</title>
-  <link rel="stylesheet" href="../styles.css">
+  <title>Tchh Blogs</title>
+  <link rel="stylesheet" href="../statics/styles.css">
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
 </head>
+
 <body>
-  <header>
-    <nav>
-      <a href="../index.html" class="home-button">Home</a>
-    </nav>
-  </header>
   <main>
-    <h1>Government Links</h1>
+    <div class="page-head">Government Links</div>
     <ul id="linkList"></ul>
-
-    <script>
-      async function loadLinks() {
-        const response = await fetch('govt-links.json');
-        const links = await response.json();
-        const linkList = document.getElementById('linkList');
-
-        links.forEach(link => {
-          const listItem = document.createElement('li');
-          listItem.classList.add('link-item');
-          listItem.innerHTML = `
-            <a href="${link.url}" target="_blank">${link.title}</a>
-            <p>${link.description}</p>
-          `;
-          linkList.appendChild(listItem);
-        });
-      }
-
-      loadLinks();
-    </script>
   </main>
-  <footer>
-    <p>&copy; 2025 Tchh Blogs</p>
-  </footer>
+
+  <script src="../statics/script.js"></script>
+  <script src="../statics/layout.js"></script>
+  <script>
+    initLayout();
+    loadLinks("govt-links.json");
+  </script>
 </body>
+
 </html>
