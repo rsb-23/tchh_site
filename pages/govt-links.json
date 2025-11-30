@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Aadhaar Services",
+    "description": "Manage your Aadhaar details and access related services.",
+    "url": "https://uidai.gov.in/"
+  },
+  {
+    "title": "Know Mobile Connections in Your Name",
+    "description": "Check the number of mobile connections issued in your name by logging in with your mobile number.",
+    "url": "https://tafcop.sancharsaathi.gov.in/telecomUser/"
+  },
+  {
+    "title": "National Portal of India",
+    "description": "Access a wide range of government services and information.",
+    "url": "https://www.india.gov.in/"
+  }
+]
