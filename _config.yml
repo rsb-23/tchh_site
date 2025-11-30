@@ -1,5 +1,2 @@
-theme: jekyll-theme-minimal
+theme: jekyll-theme-cayman
 title: My Notes
-collections:
-  notes:
-    output: true
