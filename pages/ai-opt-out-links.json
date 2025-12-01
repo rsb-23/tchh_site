@@ -5,6 +5,11 @@
     "description": "Opt out of OpenAI's data usage policies."
   },
   {
+    "title": "Claude AI",
+    "url": "https://claude.ai/settings/data-privacy-controls",
+    "description": "Opt out of location and data usage for training."
+  },
+  {
     "title": "LinkedIn",
     "url": "https://www.linkedin.com/mypreferences/d/settings/data-for-ai-improvement",
     "description": "Manage your LinkedIn data and AI preferences."

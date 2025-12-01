@@ -24,3 +24,12 @@ async function loadLinks(fileName) {
     linkList.appendChild(listItem);
   });
 }
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Backspace' &&
+      !['INPUT', 'TEXTAREA'].includes(e.target.tagName) &&
+      !e.target.isContentEditable) {
+    e.preventDefault();
+    window.history.back();
+  }
+});
