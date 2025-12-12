@@ -1,12 +1,10 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 20px;
-}
+@import url("index.css");
+@import url("page.css");
+/* @import url("theme0.css"); */
+@import url("theme_calm.css");
 
-#searchInput {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
+a:hover {
+  color: var(--accent);
 }
 
 .link-item {
@@ -15,7 +13,7 @@ body {
 
 .link-item a {
   text-decoration: none;
-  color: #007BFF;
+  /* color: #007bff; */
 }
 
 .link-item a:hover {
@@ -25,7 +23,7 @@ body {
 header {
   position: sticky;
   top: 0;
-  background-color: #f8f9fa;
+  /* background-color: #f8f9fa; */
   border-bottom: 1px solid #ddd;
   padding: 1rem 2rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -33,7 +31,7 @@ header {
 }
 
 footer {
-  background-color: #f8f9fa;
+  /* background-color: #f8f9fa; */
   padding: 10px 0;
   text-align: center;
   border-top: 1px solid #ddd;
@@ -48,20 +46,6 @@ nav {
   margin: 0 auto;
 }
 
-.home-button {
-  color: #2563eb;
-  text-decoration: none;
-  font-weight: 600;
-  padding: 0.5rem 0rem;
-  border-radius: 6px;
-  transition: background 0.2s;
-  text-decoration: none;
-}
-
-.home-button:hover {
-  background: #eff6ff;
-}
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -73,7 +57,14 @@ nav {
 .logo {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #1f2937;
+  /* color: #1f2937; */
+}
+
+.logo a {
+  /* color: #4b5563; */
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
 }
 
 .nav-links {
@@ -83,7 +74,7 @@ nav {
 }
 
 .nav-links a {
-  color: #4b5563;
+  /* color: #4b5563; */
   text-decoration: none;
   font-weight: 500;
   transition: color 0.2s;
@@ -91,12 +82,9 @@ nav {
 
 .nav-links a:hover,
 .nav-links a.active {
-  color: #2563eb;
+  /* color: #2563eb; */
 }
 
-.page-head {
-  font-size: 1.5rem;
-  font-weight: 500;
-  margin: 1rem;
-  align-content: center;
+main {
+    margin: 2vw;
 }
