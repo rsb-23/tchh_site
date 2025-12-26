@@ -28,5 +28,10 @@
     "title": "EPFO Member Login",
     "description": "for Member login, making Claims and other updates.",
     "url": "https://unifiedportal-mem.epfindia.gov.in/memberinterface/"
+  },
+  {
+    "title": "Unclaimed LIC policy",
+    "description": "To know whether any amount under your LIC policy is lying unclaimed with govt.",
+    "url": "https://merchant.licindia.in/LICEPS/portlets/visitor/unclaimedPolicyDues/getUnclaimedData.do"
   }
 ]

@@ -5,7 +5,8 @@
   --secondary: #718096;
   --accent: #5a67d8;
   --card-bg: #ffffff;
-  --border: #e2e8f0;
+  --border: #ccc;
+  --border-light: #ddd;
 }
 
 [data-theme="dark"] {
@@ -16,15 +17,23 @@
   --accent: #7c3aed;
   --card-bg: #2d3748;
   --border: #4a5568;
+  --border-light: #75839b;
 }
 
 body {
   background: var(--bg);
   color: var(--text);
-  font-family: system-ui, -apple-system, sans-serif;
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
   line-height: 1.6;
 }
 
 a {
   color: var(--accent);
+
+  &:hover {
+    color: var(--accent);
+  }
 }

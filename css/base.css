@@ -1,0 +1,85 @@
+body {
+  margin: 1rem;
+  padding: 1rem;
+}
+header {
+  position: sticky;
+  top: 0;
+  background-color: var(--bg);
+  border-bottom: 1px solid var(--border);
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+main {
+  margin-top: 2vw;
+  min-height: 55vh;
+  flex: 1;
+  align-content: start;
+}
+footer {
+  display: flex;
+  padding-top: 10px;
+  border-top: 1px solid var(--border);
+  margin-top: 20px;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+fieldset {
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+
+  a {
+    text-decoration: none;
+  }
+
+  ul {
+    margin: 0;
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+}
+
+.fieldset-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+legend {
+  font-weight: 600;
+}
+
+li {
+  list-style: none;
+  position: relative;
+  padding-left: 1.8em;
+
+  &::before {
+    content: attr(data-icon);
+    position: absolute;
+    left: 0;
+    width: 1.2em;
+    text-align: center;
+  }
+
+  &:not([data-icon])::before {
+    content: "⊚";
+  }
+}

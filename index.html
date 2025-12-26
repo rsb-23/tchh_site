@@ -1,26 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A curated list of useful links for various purposes." />
+    <title>Tchh Blogs</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="A curated list of useful links for various purposes.">
-  <title>Tchh Blogs</title>
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
-</head>
-
-<body>
-  <main>
-    <input type="text" id="searchInput" placeholder="Search..." onkeyup="filterLinks()">
-    <ul id="linkList">
-      <li class="link-item"><a href="pages/ai-opt-out.html">AI Opt-Out Settings</a></li>
-      <li class="link-item"><a href="pages/govt.html">Government Links (India)</a></li>
-    </ul>
-  </main>
-  <script src="js/script.js"></script>
-  <script src="js/layout.js"></script>
-  <script>initLayout()</script>
-</body>
-
+  <body>
+    <main>
+      <input type="text" id="searchInput" placeholder="Search..." onkeyup="filterLinks()" />
+      <div class="fieldset-grid">
+        <fieldset>
+          <legend>Official</legend>
+          <ul>
+            <li class="link-item red-box" data-icon="🚨"><a href="pages/emergency.html">Emergency Contacts</a></li>
+            <li class="link-item" data-icon="🏛️"><a href="pages/govt.html">Government Links (India)</a></li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>General</legend>
+          <ul>
+            <li class="link-item" data-icon="🤖"><a href="pages/ai-opt-out.html">AI Opt-Out Settings</a></li>
+          </ul>
+        </fieldset>
+      </div>
+    </main>
+    <script src="js/script.js"></script>
+    <script src="js/layout.js"></script>
+    <script>
+      initLayout();
+    </script>
+  </body>
 </html>
