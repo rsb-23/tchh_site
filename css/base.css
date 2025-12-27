@@ -1,6 +1,6 @@
 body {
-  margin: 1rem;
-  padding: 1rem;
+  margin: clamp(10px, 1vw, 1rem);
+  padding: clamp(10px, 1vw, 1rem);
 }
 header {
   position: sticky;

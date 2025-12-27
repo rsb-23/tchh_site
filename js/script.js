@@ -1,7 +1,7 @@
 function filterLinks() {
   const query = document.getElementById("searchInput").value.toLowerCase();
   const items = document.querySelectorAll(".link-item");
-  items.forEach(item => {
+  items.forEach((item) => {
     const text = item.innerText.toLowerCase();
     item.style.display = text.includes(query) ? "" : "none";
   });
@@ -12,11 +12,11 @@ async function loadLinks(fileName) {
   const links = await response.json();
   links.sort((a, b) => a.title.localeCompare(b.title));
 
-  const linkList = document.getElementById('linkList');
+  const linkList = document.querySelector(".link-list");
 
-  links.forEach(link => {
-    const listItem = document.createElement('li');
-    listItem.classList.add('link-item');
+  links.forEach((link) => {
+    const listItem = document.createElement("li");
+    listItem.classList.add("link-item");
     listItem.innerHTML = `
             <a href="${link.url}" target="_blank">${link.title}</a>
             <p>${link.description}</p>
@@ -25,10 +25,8 @@ async function loadLinks(fileName) {
   });
 }
 
-document.addEventListener('keydown', (e) => {
-  if (e.key === 'Backspace' &&
-      !['INPUT', 'TEXTAREA'].includes(e.target.tagName) &&
-      !e.target.isContentEditable) {
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Backspace" && !["INPUT", "TEXTAREA"].includes(e.target.tagName) && !e.target.isContentEditable) {
     e.preventDefault();
     window.history.back();
   }

@@ -4,6 +4,12 @@
   margin: 1rem;
   align-content: center;
 }
-p{
-max-width: 100ch;
+
+p {
+  max-width: 100ch;
+  margin: 0.3rem 0 1rem;
+}
+
+.link-list {
+  padding-left: 1.5rem;
 }
